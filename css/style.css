@@ -11,6 +11,11 @@ body{
 /* Nav bar */
 
 /*location of button*/
+nav{
+    position: inherit;
+    padding-top: 25px;
+    color: rgba(247,72,78,255);
+}
 .btn{
     position: absolute;
     top: 21px;
@@ -21,7 +26,7 @@ body{
     height: 20px;
     
 }
-/*size of the button*/
+/*size of the button lines*/
 .btn span{
     position: absolute;
     display: flex;
@@ -142,4 +147,30 @@ section{
     bottom: 2%;
     margin-top: -25px;
     margin-left: -25px;
+}
+
+
+
+/*---------------------About me---------------------*/
+.about-me{
+    /*e8ded1*/
+    background-color: #f3f1f1;
+}
+
+
+/*---------------------Projects---------------------*/
+.projects{
+    background-color: rgba(41,41,41,255);
+    color: whitesmoke;
+}
+.projects .container-fluid{
+    /* padding: top right bottom left  */
+    padding: 2% 4% 2% 4%;
+    margin: 0%;
+}
+
+
+/*---------------------Contact---------------------*/
+.contact{
+    background-color: whitesmoke;
 }

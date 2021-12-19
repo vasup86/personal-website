@@ -17,40 +17,44 @@
     <!--Nav Bar (1, 2)-->
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-            <a onclick="openMenu();" title="" class="btn">
+            <div class="brand">
+                Vasu Patel
+            </div>
+            <a onclick="Menu();" title="" class="btn">
                 <span></span>
                 <span></span>
             </a>
             <div class="menu">
                 <ul class="menu_list">
                     <li class="menu_list">
-                        <a href="#home" title="" onclick="closeMenu();" class="menu_link">Home</a>
+                        <a href="#home" title="" onclick="Menu();" class="menu_link">Home</a>
                     </li>
                     <li class="menu_list">
-                        <a href="#about-me" title="" onclick="closeMenu();" class="menu_link">About</a>
+                        <a href="#about-me" title="" onclick="Menu();" class="menu_link">About</a>
                     </li>
                     <li class="menu_list">
-                        <a href="#projects" title="" onclick="closeMenu();" class="menu_link">Projects</a>
+                        <a href="#projects" title="" onclick="Menu();" class="menu_link">Projects</a>
                     </li>
                     <li class="menu_list">
-                        <a href="#contact" title="" onclick="closeMenu();" class="menu_link">Contact</a>
+                        <a href="#contact" title="" onclick="Menu();" class="menu_link">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
+    <!-- down button (still need to make it work, change it to red if possible) -->
+    
     <!-- landing Section -->
     <section class="landing text-dark p-5 text-center " id="home">
-        <div class="container">
+        <a class="arrow bounce" onclick="nextSection();">
+            <img src="res/keyboard_double_arrow_down_red_36dp.svg" alt="">
+        </a>
+        <div class="container-fluid">
             <div>
                 hi
             </div>
         </div>
-        <a class="arrow bounce" >
-            <img src="res/keyboard_double_arrow_down_white_36dp.svg" alt="">
-        </a>
     </section>
 
     <!-- about me section -->
@@ -58,25 +62,22 @@
         <div>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-
         </div>
-
-        <a class="arrow bounce">
-            <img src="res/keyboard_double_arrow_down_black_36dp.svg" alt="">
-        </a>
     </section>
 
     <!-- projects section -->
     <section class="projects" id="projects">
-        <div>
+        <a class="arrow bounce" onclick="nextSection();">
+            <img src="res/keyboard_double_arrow_down_red_36dp.svg" alt="">
+        </a>
+        <div class="container-fluid">
             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
         </div>
-
     </section>
 
     <!-- contact me section -->
     <section class="contact" id="contact">
-        <div>
+        <div class="container-fluid">
             contact me
         </div>
     </section>
