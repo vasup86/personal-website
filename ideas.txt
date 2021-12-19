@@ -1,0 +1,5 @@
+1: https://melaniedaveid.com/
+
+color: Black/grey: rgba(41,41,41,255)
+        red: rgba(247,72,78,255)
+

@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+body{
+    font-family: Montserrat;
+    position: relative;
+}
+
+/* Nav bar */
+
+/*location of button*/
+.btn{
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    z-index: 3;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    
+}
+/*size of the button*/
+.btn span{
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background: rgba(247,72,78,255);
+    transition: .5s;
+}
+/*position of each line within the button space*/
+.btn span:nth-child(1){
+    top: 25%;
+}
+.btn span:nth-child(2){
+    top: 75%;
+}
+
+.btn.is-active span{
+    background: rgba(247,72,78,255);
+}
+
+/*transformation to X*/
+.btn.is-active span:nth-child(1){
+    top: 50%;
+    transform:  rotate(-45deg);
+}
+.btn.is-active span:nth-child(2){
+    top: 50%;
+    transform:  rotate(45deg);
+}
+
+/*menu details*/
+.menu {
+    background: rgb(0, 0, 0,0.60);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 100px;
+    z-index: 1;
+    transform: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*when active (clicked)*/
+.menu.is-active{
+    transition: .5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu.is-off{
+    transform: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu_list.is-active:after:active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu_list  {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.menu_list:not(:last-child){
+    margin-bottom: 30px;
+}
+
+/*each menu item */
+.menu_link  {
+    position: relative;
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 48px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu_link:hover{
+    text-decoration: none;
+    color: rgba(247,72,78,255);
+}
+
+/*hover underline*/
+.menu_link:after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    display: inline-flex;
+    background: #c5e600;
+    transition: .3s;
+    outline-color: none;
+}
+.menu_link:hover:after{
+    width: 100%;
+}
+
+/*--------------------Landing Section--------------------------*/
+/* each section is exact one page */
+section{
+    height: 100vh;
+}
+.landing{
+    background-color: rgba(41,41,41,255);
+}
+.bounce{
+    position: fixed;
+    left: 50%;
+    bottom: 2%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
