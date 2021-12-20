@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" class="style">
     
     <title>Vasu Patel Portfolio</title>
 </head>
 <body>
     
     <!--bootstrap js link-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
     <!--Nav Bar (1, 2)-->
-    <nav class="navbar fixed-top navbar-expand-lg">
+    <nav class="navbar fixed-top navbar-expand-lg py-3">
         <div class="container">
-            <div class="brand">
+            <div class="navbar-brand">
                 Vasu Patel
             </div>
             <a onclick="Menu();" title="" class="btn">
@@ -42,20 +41,31 @@
             </div>
         </div>
     </nav>
-
-    <!-- down button (still need to make it work, change it to red if possible) -->
     
+
     <!-- landing Section -->
-    <section class="landing text-dark p-5 text-center " id="home">
-        <a class="arrow bounce" onclick="nextSection();">
-            <img src="res/keyboard_double_arrow_down_red_36dp.svg" alt="">
-        </a>
-        <div class="container-fluid">
-            <div>
-                hi
+    <section class="landing text-dark p-5" id="home">
+        <div class="container">
+            <div class="title">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <span>
+                            Hi, I am
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 ">Vasu Patel</div>
+                </div>
+            </div>
+            <div class="arrow" >
+                <a  class="arrow bounce" href="#about-me">
+                    <img src="res/keyboard_double_arrow_down_red_36dp.svg" alt="">
+                </a>
             </div>
         </div>
     </section>
+
 
     <!-- about me section -->
     <section class="about-me" id="about-me">
@@ -67,9 +77,6 @@
 
     <!-- projects section -->
     <section class="projects" id="projects">
-        <a class="arrow bounce" onclick="nextSection();">
-            <img src="res/keyboard_double_arrow_down_red_36dp.svg" alt="">
-        </a>
         <div class="container-fluid">
             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
         </div>
@@ -85,5 +92,9 @@
     <!-- js script -->
     <script src="js/index.js"></script>
 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

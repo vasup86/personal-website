@@ -8,7 +8,3 @@ function Menu(e){
     e.preventDefault();
 }
 
-function nextSection(){
-    var currentSection = Document.querySelector();
-    
-}

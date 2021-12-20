@@ -1,5 +1,9 @@
 1: https://melaniedaveid.com/
+2: https://www.wokine.com/en/
 
 color: Black/grey: rgba(41,41,41,255)
         red: rgba(247,72,78,255)
+
+intro:
+https://www.sliderrevolution.com/resources/css-text-animation/
 

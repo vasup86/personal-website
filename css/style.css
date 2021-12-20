@@ -14,33 +14,35 @@ body{
 nav{
     position: inherit;
     padding-top: 25px;
+    padding-left: 15px;
     color: rgba(247,72,78,255);
 }
 .btn{
     position: absolute;
-    top: 21px;
+    top: 18px;
     right: 25px;
     z-index: 3;
     display: flex;
     width: 20px;
-    height: 20px;
+    height: 18px;
     
 }
 /*size of the button lines*/
 .btn span{
     position: absolute;
     display: flex;
-    width: 20px;
+    width: 18px;
     height: 2px;
     background: rgba(247,72,78,255);
     transition: .5s;
 }
-/*position of each line within the button space*/
+
+/*position of each line within the button space (distance from top and bottom of the height in .btn)*/
 .btn span:nth-child(1){
-    top: 25%;
+    top: 30%;
 }
 .btn span:nth-child(2){
-    top: 75%;
+    top: 70%;
 }
 
 .btn.is-active span{
@@ -140,13 +142,27 @@ section{
 }
 .landing{
     background-color: rgba(41,41,41,255);
+    color: whitesmoke!important;
+    font-size: 48px;
+}
+.landing .container{
+    text-align: center!important;
+    align-items: center;
+    justify-content: center!important;
+    height: 100%;
+    width: 100%;
+}
+.landing .container .title{
+    height: 90%;    
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
 .bounce{
-    position: fixed;
     left: 50%;
     bottom: 2%;
     margin-top: -25px;
     margin-left: -25px;
+    justify-content: center;   
 }
 
 
