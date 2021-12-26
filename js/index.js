@@ -25,7 +25,6 @@ document.getElementById('title').addEventListener('mousemove',function(){
         let normalizedPosition = e.pageX /(width/2)-1;
         
         let speedSlow = 110*normalizedPosition;
-        console.log(normalizedPosition);
     
         spansSlow.forEach((span)=>{
             span.style.transform = `translate(${(speedSlow)}px)`;
@@ -36,4 +35,3 @@ document.getElementById('title').addEventListener('mousemove',function(){
         width = window.innerWidth;
     }
 },false);
-

@@ -3,8 +3,21 @@
 
 color: Black/grey: rgba(41,41,41,255)
         red: rgba(247,72,78,255)
+        purple: rgba(61,44,124,255)
+
 
 intro:
  1: https://www.sliderrevolution.com/resources/css-text-animation/
  potentials: sliding text, css terminal, glitch, text scramble, love text effect, 
                 Animated wave clipped by text
+
+color palette:
+1: https://visme.co/blog/website-color-schemes/
+
+
+icons:
+1:  https://www.icons8.com /* pyt them at the end in the footer*/
+
+cursor: 
+1: https://www.w3docs.com/snippets/css/how-to-change-cursor-on-hover-in-css.html 
+        -- Example of adding an image as a cursor

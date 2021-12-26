@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat&display=swap');
+
+.projects{
+    background-color: #f3f1f1;
+    color: black;
+}
+.projects .project-main{
+    /* padding: top right bottom left  */
+    padding: 5% 3% 5% 3%;
+    width: 100%;
+    height: 100%;
+}
+
+.projects .project-main .title{
+    font-size: 48px;
+}
+
+.projects .project-main .mainCards{
+    display: flex;
+    padding: 5% 3% 5% 3%;
+    height: 100%;
+    align-items: center;
+}
+
+.projects .project-main .eachCard{
+    height: 50%;
+}
+
+.projects .card{
+    background-color: transparent;
+    width: 33.3%;
+    height: 100%;
+}

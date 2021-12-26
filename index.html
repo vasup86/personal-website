@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" class="style">
-    
+    <link rel="stylesheet" href="css/about.css" class="style">
+    <link rel="stylesheet" href="css/skills.css" class="style">
+    <link rel="stylesheet" href="css/projects.css" class="style">
     <title>Vasu Patel Portfolio</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <!--Nav Bar (1, 2)-->
     <nav class="navbar fixed-top navbar-expand-lg py-3">
         <div class="container">
-            <div class="navbar-brand">
+            <div class="name">
                 Vasu Patel
             </div>
             <a onclick="Menu();" title="" class="btn">
@@ -30,6 +32,9 @@
                     </li>
                     <li class="menu_list">
                         <a href="#about-me" title="" onclick="Menu();" class="menu_link">About</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#skills" title="" onclick="Menu();" class="menu_link">Skills</a>
                     </li>
                     <li class="menu_list">
                         <a href="#projects" title="" onclick="Menu();" class="menu_link">Projects</a>
@@ -90,28 +95,87 @@
             </div>
                 
         </div>
-            <!--
+        <div class="container">
             <div class="arrow" >
                 <a  class="arrow bounce" href="#about-me">
                     <img src="res/keyboard_double_arrow_down_red_36dp.svg" alt="">
                 </a>
             </div> 
-        -->
+        </div>
     </section>
 
 
     <!-- about me section -->
     <section class="about-me" id="about-me">
-        <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="container about">
+            <div class="row">
+                <div class="about-title col-sm-12">
+                    About me
+                </div>
+            </div>
+            <div class="row" id="blurb">
+                <div class="info col-sm-7">
+                    <div class="row blurb">
+                        <div class="col">
+                            <p>
+                                Hi, <br>
+                                    My name is Vasu Patel and I am a second year computer engineering student at Ryerson University, Toronto. I am passionate about programming and digital systems. I have experience in java, python, C, HTML, CSS and GIT through personal and school projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="myPhoto col-sm-4">
+                    <img src="res/Me.svg"  alt="My beautiful face">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- tech skills section -->
+    <section class="skills" id="skills">
+        <div class="container skills-icons" id="skills-icons">
+            <div class="row about">
+                <div class="about-title col-sm-12">
+                    Skills
+                </div>
+            </div>
+            <div class="row">
+                <img src="res/c-programming.svg" alt="">
+                <img src="res/java.svg" alt="">
+                <img src="res/python.svg" alt="">
+                <img src="res/html5.svg" alt="">
+                <img src="res/css3.svg" alt="">
+            </div>
+            <div class="row">
+                <img src="res/git.svg" alt="">
+                <img src="res/bootstrap.svg" alt="">
+                <img src="res/arduino.svg" alt="">
+                <img src="res/android-studio.svg" alt="">
+            </div>
         </div>
     </section>
 
     <!-- projects section -->
     <section class="projects" id="projects">
-        <div class="container-fluid">
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        <div class="container project-main">
+            <div class="row title">
+                <div class="col-sm-12">
+                    Projects
+                </div>
+            </div>
+            <div class="row mainCards">
+                <div class="eachCard owl-carousel">
+                    <div class="item">
+                        <div class="card">
+                            <img src="res/indeed.svg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                Indeed Scraper
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
