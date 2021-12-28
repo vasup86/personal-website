@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/about.css" class="style">
     <link rel="stylesheet" href="css/skills.css" class="style">
     <link rel="stylesheet" href="css/projects.css" class="style">
+    <link rel="stylesheet" href="css/contact.css" class="style">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owl/owl.carousel.css" class="style">
+    <link rel="stylesheet" href="owl/owl.theme.default.css" class="style">
+
     <title>Vasu Patel Portfolio</title>
 </head>
 <body>
@@ -140,16 +146,20 @@
                     Skills
                 </div>
             </div>
+            
             <div class="row">
                 <img src="res/c-programming.svg" alt="">
                 <img src="res/java.svg" alt="">
                 <img src="res/python.svg" alt="">
+            </div>
+            <div class="row">
                 <img src="res/html5.svg" alt="">
                 <img src="res/css3.svg" alt="">
+                <img src="res/javascript.svg" alt="">
+                <img src="res/bootstrap.svg" alt="">
             </div>
             <div class="row">
                 <img src="res/git.svg" alt="">
-                <img src="res/bootstrap.svg" alt="">
                 <img src="res/arduino.svg" alt="">
                 <img src="res/android-studio.svg" alt="">
             </div>
@@ -164,25 +174,136 @@
                     Projects
                 </div>
             </div>
-            <div class="row mainCards">
-                <div class="eachCard owl-carousel">
-                    <div class="item">
-                        <div class="card">
-                            <img src="res/indeed.svg" alt="" class="card-img-top">
+            <div class="row mainCards owl-carousel owl-theme">
+                <div class="col eachCard">
+                    <div class="card">
+                        <a href="https://github.com/vasup86/Indeed-Scraper" target="_blank" rel="noopener noreferrer">
+                            <img class="titleImage" src="res/indeed.svg" alt="" class="card-img-top">
                             <div class="card-body">
-                                Indeed Scraper
+                                <span class="title">
+                                    <b>INDEED SCRAPER</b> 
+                                </span>
+                                <span>
+                                    <br>This project is an Indeed job posting scraper created using python. 
+                                </span>
                             </div>
-                        </div>
+                            <div class="card-lang">
+                                <img src="res/python.svg" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
+                <div class="col eachCard">
+                    <div class="card">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img class="titleImage" src="res/indeed.svg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <span class="title">
+                                    <b>Grocery List App</b> 
+                                </span>
+                                <span>
+                                    <br>This project is an Indeed job posting scraper created using python. 
+                                </span>
+                            </div>
+                            <div class="card-lang">
+                                <img src="res/java.svg" alt="">
+                                <img src="res/android-studio.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col eachCard">
+                    <div class="card">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img class="titleImage" src="res/website.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <span class="title">
+                                    <b>Personal Website</b> 
+                                </span>
+                                <span>
+                                    <br>This project is an Indeed job posting scraper created using python. dnfoeiwfneoifneorfijoifjewnfnoef
+                                </span>
+                            </div>
+                            <div class="card-lang">
+                                <img src="res/html5.svg" alt="">
+                                <img src="res/css3.svg" alt="">
+                                <img src="res/javascript.svg" alt="">
+                                <img src="res/bootstrap.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col eachCard">
+                    <div class="card">
+                        <a href="https://github.com/vasup86/R3-SoftwareTask2-VasuPatel" target="_blank" rel="noopener noreferrer">
+                            <img class="titleImage" src="res/server-client.svg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <span class="title">
+                                    <b>Server-Client</b> 
+                                </span>
+                                <span>
+                                    <br>This project is an Indeed job posting scraper created using python. 
+                                </span>
+                            </div>
+                            <div class="card-lang">
+                                <img src="res/python.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>            
             </div>
         </div>
     </section>
 
     <!-- contact me section -->
     <section class="contact" id="contact">
-        <div class="container-fluid">
-            contact me
+        <div class="container main">
+            <div class="row title">
+                <div class="col-sm-12">
+                    Contact Me
+                </div>
+            </div>
+            <div class="row mail-content">
+                <div class="col-sm-8 mail-form">
+                    <div class="mail-form">
+                        <form target="_blank" action="https://formsubmit.co/8c62883db60eb87c0a8de537e275b354" method="POST">
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="col name-f">
+                                        <input class="form-control" type="text" name="name" placeholder="Name" required>
+                                    </div>
+                                    <div class="col email-f">
+                                        <input class="form-control" type="email" name="email" placeholder="Email" required>
+                                        <input type="hidden" name="_subject" value="website-vasu">  
+                                    </div>
+                                </div>
+                            </div>                        
+                            <div class="form-group body">
+                                <textarea name="message" placeholder="Body" id="" rows="9" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-lg">Submit Form</button>
+                       </form>
+                    </div>           
+                </div>
+            </div>
+            <div class="row icons">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/vasu-patel8/" target="_blank" rel="noopener noreferrer"><img src="res/linkedin.svg" alt=""></a>
+                    <a href="https://github.com/vasup86" target="_blank" rel="noopener noreferrer"><img src="res/github.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="credits">
+               <span class="credits-title">
+                Credits: 
+               </span>
+                <br>
+                <span>
+                    Icons/Logos: <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer">icons8.com</a>  and <a href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer">svgrepo.com</a> 
+                </span> 
+            </div>
         </div>
     </section>
 
@@ -193,5 +314,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+    <!-- owl carousel -->
+    <script src="owl/owl.carousel.js"></script>
+    <script src="js/caro.js"></script>
 </body>
 </html>

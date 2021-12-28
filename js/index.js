@@ -35,3 +35,4 @@ document.getElementById('title').addEventListener('mousemove',function(){
         width = window.innerWidth;
     }
 },false);
+

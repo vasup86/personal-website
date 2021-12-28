@@ -3,6 +3,7 @@
 .projects{
     background-color: #f3f1f1;
     color: black;
+    overflow: hidden;
 }
 .projects .project-main{
     /* padding: top right bottom left  */
@@ -13,21 +14,96 @@
 
 .projects .project-main .title{
     font-size: 48px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    font: 'IBM Plex Sans';
 }
 
 .projects .project-main .mainCards{
     display: flex;
-    padding: 5% 3% 5% 3%;
-    height: 100%;
+   /* padding: 4% 3% 5% 3%;*/
+    padding: 4vh 3vh 5vh 3vh;
+    height: 95%;
     align-items: center;
 }
 
 .projects .project-main .eachCard{
-    height: 50%;
+    height: 100%;
 }
 
 .projects .card{
     background-color: transparent;
-    width: 33.3%;
+    width: 300px;
     height: 100%;
+    overflow: hidden;
+}
+.projects .card a{
+    cursor: url("/res/github.png"), default;
+}
+.projects a{
+    height: 100%;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.projects a:hover{
+    color: inherit;
+}
+.projects .card .titleImage{
+    height: 35%;
+    width: 100%;
+    border-bottom: 1px black dotted;
+}
+.projects .card .titleImage Img{
+    height: 100%;
+}
+
+
+.projects .card .card-body{
+    padding: 0% 3% 0% 3%;
+    height: 50%;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.projects .card .card-body .title{
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+.projects .card .card-lang{
+    display: flex;
+    border-top: 1px black dotted;
+    height: 15%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projects .card .card-lang img{
+    /*border: 2px black solid;*/
+    height: 90%;
+    width: 15%;
+}
+
+/*carousel*/
+
+.projects .mainCards .owl-stage-outer{
+    height: 100%;
+}
+.projects .mainCards .owl-stage-outer .owl-stage{
+    height: 100%;
+}
+.projects .mainCards .owl-stage-outer .owl-stage .owl-item{
+    height: 100%;
+}
+
+/*fixed mainCard padding and hide the scroll button at the bottom for phone*/
+@media only screen and (max-width: 1026px) {
+    .projects .mainCards{
+        padding: 3vh 3vh 3vh 3vh;
+    }
+    .projects .project-main .mainCards .owl-dots{
+       display: none;
+    }
 }

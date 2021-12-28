@@ -1,0 +1,111 @@
+/*---------------------Contact---------------------*/
+.contact{
+    background-color: rgba(41,41,41,255);
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.contact .main{
+    width: 100%;
+    height: 90%;
+    padding: 5% 3% 2% 3%;
+}
+
+.contact .title{
+    font-size: 48px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    font: 'IBM Plex Sans';
+}
+
+.contact .mail-content {
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    height: 70%;
+}
+.contact .form-row{
+    display: flex;
+    justify-content: end;
+}
+
+.contact .mail-content .mail-form .body{
+    padding: 1% 0% 0% 0%;
+    width: 100%;
+}
+
+/*padding inside text area*/
+.contact .mail-content .mail-form .body textarea{
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+}
+
+.contact .mail-content button{
+    width: 100%;
+    display: block;
+    border: none;
+    color: rgba(247,72,78,255);
+}
+.contact .icons {
+    width: 100%;
+    height: 10%;
+    padding: 0.5% 0.5% 0.5% 1%;
+    background-color: transparent;
+}
+
+.contact .icons .icons{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: left;
+}
+
+.contact .icons .icons a{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: left;
+}
+.contact .icons .icons img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .credits{
+    bottom: 1%;
+    width: 100%;
+    height: 5%;
+    font-size: 14px;
+}
+
+.contact .credits .credits-title{
+    color: rgba(247,72,78,255);
+}
+.contact .credits a{
+    color: inherit;
+}
+
+/*change icon size for phone*/
+@media only screen and (max-width: 1000px) {
+
+    .contact .mail-content {
+        display: flex;
+        align-items: center;
+    }
+    .contact .icons .icons a{
+        display: flex;
+        width: 10%;
+        height: 100%;
+        justify-content: left;
+    }
+    .contact .icons .icons {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .contact .icons .icons img{
+        width: 100%;
+        height: 60%;
+    }
+}

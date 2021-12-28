@@ -21,3 +21,12 @@ icons:
 cursor: 
 1: https://www.w3docs.com/snippets/css/how-to-change-cursor-on-hover-in-css.html 
         -- Example of adding an image as a cursor
+
+
+message form:
+https://formsubmit.co/live-demo
+
+hosting:
+1: hostinger
+
+2: https://www.reddit.com/r/webdev/comments/5m8tr4/how_do_i_host_the_website_i_just_built/
