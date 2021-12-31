@@ -42,24 +42,18 @@
     font: Montserrat;
     font-size: 20px;
     align-items: center;
+    
 }
-.about-me .container .awards {
-    font: Montserrat;
-    font-size: 20px;
-    align-items: center;
+.about-me .container .blurb button {
+    float: left;
+    width: auto;
+    background-color: rgb(234, 234, 241);
 }
-
-.about-me .skills-icons{
-    padding: auto;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/*dynamically adjust icons width and height for diff screens*/
-.about-me .skills-icons img{
-    padding-bottom: 10px;
-    width: 5%;
-    height: 4.5%;
+.about-me .container .blurb .resume a{
+    text-decoration: none;
+    color:  rgba(247,72,78,255);
+    width: 100%;
+    padding: 0;
 }
 
 

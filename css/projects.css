@@ -50,7 +50,7 @@
     color: inherit;
 }
 .projects .card .titleImage{
-    height: 35%;
+    height: 30%;
     width: 100%;
     border-bottom: 1px black dotted;
 }
@@ -61,14 +61,23 @@
 
 .projects .card .card-body{
     padding: 0% 3% 0% 3%;
-    height: 50%;
+    height: 55%;
     width: 100%;
     display: block;
     text-align: center;
+    overflow: hidden;
 }
 
 .projects .card .card-body .title{
     text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font: 'IBM Plex Sans';
+    font-size: 120%;
+    border-bottom: 1px black solid;
+}
+.projects .card .card-body .project-body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font: 'IBM Plex Sans';
     font-size: 100%;
 }
 
