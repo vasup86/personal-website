@@ -31,7 +31,7 @@
 }
 
 .about-me .container .info {
-    display: flex;
+    display: block;
     font: Montserrat;
     font-size: 20px;
     align-items: center;
@@ -42,18 +42,40 @@
     font: Montserrat;
     font-size: 20px;
     align-items: center;
-    
+    width: 100%;
+    height: 80%;
 }
+.about-me .container .blurb .col{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+/*
 .about-me .container .blurb button {
     float: left;
     width: auto;
     background-color: rgb(234, 234, 241);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+} */
+.about-me .container .res{
+    display: block;
+    width: auto;
+    font-size: 18px;
 }
-.about-me .container .blurb .resume a{
+
+.about-me .container .info .resume {
     text-decoration: none;
-    color:  rgba(247,72,78,255);
-    width: 100%;
-    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    padding: 4px 7px 4px 7px;
+    border: 0.1em solid #0071e3;
+    background-color: #0976e2;
+    border-radius: 0.38em;
+    color: whitesmoke;
+    text-align: center;
+    width: auto;
 }
 
 
@@ -64,10 +86,24 @@
     }
     .about-me .container .info {
         width: 100%;
-        display: flex;
+        display: block;
         font: Montserrat;
         font-size: 4%;
         align-items: center;
+        height: 100%;
+    }
+    .about-me .container .res{
+        display: inline block;
+        width: auto; 
+        padding-left: 1rem;
+    }
+    .about-me .container .info .resume {
+        padding: 0 7px 0 7px;
+        font-size: 25px;
+        font-size: 12px;
+        border: 0.5em solid #0071e3;
+        text-align: center;
+        width: auto;
         height: 100%;
     }
 
