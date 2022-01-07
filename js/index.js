@@ -20,7 +20,6 @@ document.getElementById('title').addEventListener('mousemove',function(){
     let width = window.innerWidth;
     //let width = box.offsetWidth;
     //let width = window.screen.width;
-    console.log(width);
     function handleMouseMove(e){
         let normalizedPosition = e.pageX /(width/2)-1;
         
