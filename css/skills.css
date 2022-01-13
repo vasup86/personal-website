@@ -15,60 +15,34 @@
  
 }
 .skills .row{
-    padding: 2% 0% 2% 0%; 
+    padding: 1% 0% 1% 0%; 
     width: 100%;
     height: 25%;
     display: flex;
     justify-content: space-evenly;
     font-size: 48px;
 }
-.skills .row img{
-    width: 10%;
+.skills .row .eachImg{
+    padding: 0;
+    display: flex;
+    width: 12%;
     height: 100%;
-
-    border-radius: 41px;
-background: #292929;
-box-shadow:  8px 8px 16px #272727,
-             -8px -8px 16px #2b2b2b;
-
-
-
-
-    animation: fadeIn ease 0.1s;
-    -webkit-animation: fadeIn ease 5s;
-    -moz-animation: fadeIn ease 5s;
-    -o-animation: fadeIn ease 5s;
+}
+.skills .row img{
+    width: 95%;
+    padding: 5% 0 5% 0;
+    border-radius: 50px;
+    background: rgb(41, 41, 41,255);
+    box-shadow:  6px 6px 12px #272727,
+             -6px -6px 12px #2b2b2b;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-   100%  { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100%   { opacity: 1; }
-}
-
-
-/*change icon size for phone*/
-@media only screen and (max-width: 1000px) {
-    
-    .skills .row img{  
+@media only screen and (max-width: 1026px) {
+    .skills .image{
+        margin: 0;
+    }
+    .skills .row .eachImg{
         width: 20%;
-        height: 100%;
+        height: 50%;
     }
 }

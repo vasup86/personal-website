@@ -54,7 +54,7 @@
     color: inherit;
 }
 .projects .card .titleImage{
-    height: 30%;
+    height: 27%;
     width: 100%;
     border-bottom: 1px black dotted;
 }
@@ -65,7 +65,7 @@
 
 .projects .card .card-body{
     padding: 0% 3% 0% 3%;
-    height: 55%;
+    height: 58%;
     width: 100%;
     display: block;
     text-align: center;
@@ -124,10 +124,13 @@
         https://neumorphism.io/#292929
 */
 .projects .eachCard .card {
+    border-radius: 15px;
     background-color: #f5f5f5;
     /* box-shadow: 10px 10px 17px #d0d0d0,  -6px -6px 6px #fdfdfd;
-    box-shadow:  0px 6px 10px -5px rgba(50, 50, 93, 0.25),  0px 0px 16px -8px rgba(0, 0, 0, 0.3); */
-    box-shadow: 10px 10px 17px #d0d0d0, -7px -7px 10px #ffffff;
+    box-shadow:  0px 6px 10px -5px rgba(50, 50, 93, 0.25),  0px 0px 16px -8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 10px 10px 17px #d0d0d0, -7px -7px 10px #ffffff;*/
+    box-shadow:  7px 7px 14px #e6e6e6,
+             -7px -7px 14px #ffffff;
 }
 
 /*fixed mainCard padding and hide the scroll button at the bottom for phone*/
