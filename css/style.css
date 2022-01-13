@@ -9,8 +9,7 @@ body{
 
 /*Scroll Bar*/
 body::-webkit-scrollbar{
-    width: 12px;
-    
+    width: 12px;   
 }
 
 /*whole thing called track*/
@@ -25,9 +24,6 @@ body::-webkit-scrollbar-thumb{
     border: 3px solid #f3f1f1; /*creates padding around the line*/
     
 }
-
-
-
 
 /* Nav bar */
 

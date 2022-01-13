@@ -22,12 +22,13 @@
     padding-top: 1%;
 }
 .about-me .myPhoto{
-    padding: 0;
-    height: 100%;
-}
-.about-me .about .myPhoto img{   
-    width: 100%;
     height: 90%;
+}
+
+.about-me .about .myPhoto img{ 
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .about-me .container .info {
@@ -37,6 +38,7 @@
     align-items: center;
     height: 100%;
 }
+
 .about-me .container .blurb {
     display: block;
     font: Montserrat;

@@ -22,11 +22,19 @@
     justify-content: space-evenly;
     font-size: 48px;
 }
-
-.skills .row img{  
+.skills .row img{
     width: 10%;
     height: 100%;
-    animation: fadeIn ease 1s;
+
+    border-radius: 41px;
+background: #292929;
+box-shadow:  8px 8px 16px #272727,
+             -8px -8px 16px #2b2b2b;
+
+
+
+
+    animation: fadeIn ease 0.1s;
     -webkit-animation: fadeIn ease 5s;
     -moz-animation: fadeIn ease 5s;
     -o-animation: fadeIn ease 5s;
