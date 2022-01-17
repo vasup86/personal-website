@@ -61,6 +61,15 @@
 .projects .card .titleImage Img{
     height: 100%;
 }
+.projects .card .TicTacToe{
+    display: flex;
+    width: 50%;
+    height: 27%;
+}
+.projects .card .Tic{
+    height: 100%;
+    width: 100%;
+}
 
 
 .projects .card .card-body{
@@ -71,7 +80,7 @@
     text-align: center;
     overflow: hidden;
 }
-
+ 
 .projects .card .card-body .title{
     text-transform: uppercase;
     font-family: 'IBM Plex Sans', sans-serif;
