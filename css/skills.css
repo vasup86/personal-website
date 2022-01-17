@@ -22,27 +22,78 @@
     justify-content: space-evenly;
     font-size: 48px;
 }
-.skills .row .eachImg{
+.skills .row .ImgCard{
     padding: 0;
     display: flex;
     width: 12%;
-    height: 100%;
+    height: 97%;
 }
-.skills .row img{
+
+
+.skills .cardInner{
     width: 95%;
-    padding: 5% 0 5% 0;
-    border-radius: 28px;
-    background: rgb(41, 41, 41,255);
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.skills .cardInner:hover{
+    transform: rotateY(180deg); /*rotate back on hover*/
+}
+
+.skills .cardFace{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;  /*back (rotate) is hidden*/
+    overflow: hidden;
+    border-radius: 30px;
     box-shadow:  6px 6px 12px #272727,
              -6px -6px 12px #2b2b2b;
+}
+.skills .cardFront{
+    display: flex;
+}
+
+.skills .cardFace img{
+    width: 95%;
+    height: 97%;
+    padding: 5% 0 5% 0;
+    background: rgb(41, 41, 41,255);    
+}
+.skills .cardBack{
+    color: white;
+    transform: rotateY(180deg); /*start rotated by 180 deg (back)*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+    text-align: center;
+    font-size: 25px;
+}
+
+.skills .cardBack span{
+    font-size: 17px;
+}
+
+.skills .cardBack:hover{
+    transform: rotateY(-180deg); /*rotate to front*/
 }
 
 @media only screen and (max-width: 1026px) {
     .skills .image{
         margin: 0;
     }
-    .skills .row .eachImg{
+    .skills .row .ImgCard{
         width: 20%;
         height: 50%;
+    }
+    .skills .cardBack{
+        font-size: 18px;
+    }
+    .skills .cardBack span{
+        font-size: 12px;
     }
 }
