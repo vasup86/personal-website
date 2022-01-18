@@ -5,6 +5,7 @@ body{
     font-family: Montserrat;
     position: relative;
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
 }
 
 /*Scroll Bar*/
@@ -161,7 +162,12 @@ nav{
 /*--------------------Landing Section--------------------------*/
 /* each section is exact one page */
 section{
-    height: 100vh;
+    height: 101vh;
+    /* Gives the page on top effect (might want to change height to 105vh for better experience) */
+    position: -webkit-sticky; /*IOS*/
+    position: sticky;
+    top: 0;
+    
 }
 .landing{
     background-color: rgba(41,41,41,255);
@@ -216,7 +222,6 @@ section{
     line-height: .8;
     transition: ease-out .6s;
 }
-
 /*title animation for phone*/
 @media only screen and (max-width: 1026px) {
     .navbar .name{
