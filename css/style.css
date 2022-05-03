@@ -176,11 +176,14 @@ section{
 }
 
 .wrap{
-    padding: 15% 0% 10% 0%;
+    padding: 15% 0% 7% 0%;
     text-align: center!important;
-    height: 90%;
+    height: 85%;
     width: 100%;
-    display: inline-block;
+   /* used to be inline-block; changed it to flex
+    display: inline-block;*/
+    display: flex;
+    flex-direction: column;
     font-size: 15px;
 }
 
@@ -229,8 +232,12 @@ section{
     } 
 
     .wrap{
-        padding-top: 40%;
+        padding-top: 25%;
         padding-bottom: 10%;
+        height:80%;
+        display: flex;
+        justify-content:center;
+
     }
     .menu_link  {
         font-size: 150%;
