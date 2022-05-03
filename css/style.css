@@ -162,7 +162,7 @@ nav{
 /*--------------------Landing Section--------------------------*/
 /* each section is exact one page */
 section{
-    height: 107vh;
+    height: 115vh;
     /* Gives the page on top effect (might want to change height to 105vh for better experience) */
     position: -webkit-sticky; /*IOS*/
     position: sticky;
