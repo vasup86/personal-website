@@ -71,12 +71,9 @@
     justify-content: center;
     color: aqua;
     text-align: center;
-    font-size: 25px;
-}
-
-.skills .cardBack span{
     font-size: 17px;
 }
+
 
 .skills .cardBack:hover{
     transform: rotateY(-180deg); /*rotate to front*/
@@ -91,7 +88,7 @@
         height: 50%;
     }
     .skills .cardBack{
-        font-size: 18px;
+        font-size: 16px;
     }
     .skills .cardBack span{
         font-size: 12px;
